@@ -1,0 +1,4 @@
+[submodule "cub3dp"]
+	path = cub3dp
+	url = git@github.com:Tarcisio2code/cub3d.git
+	branch = aaron
