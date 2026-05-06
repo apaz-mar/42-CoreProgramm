@@ -1,0 +1,21 @@
+    <button onclick="loadPlayers()">Load players</button>
+
+    <ul id="players-list"></ul>
+
+    <script>
+        async function loadPlayers() {
+            const response = await fetch("http://127.0.0.1:8000/players");
+            const players = await response.json();
+
+            const list = document.getElementById("players-list");
+            list.innerHTML = "";
+
+            for (const player of players) {
+                const item = document.createElement("li");
+                item.textContent = player.name + " - score: " + player.score;
+                list.appendChild(item);
+            }
+        }
+    </script>
+</body>
+</html>
