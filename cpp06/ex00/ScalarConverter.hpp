@@ -18,7 +18,7 @@
 
 //for int convert
 #include <cstdlib> //for strtol
-#include <climits> //for INT_MIN, INT_MAX
+#include <climits> //INT MIN INT MAX
 #include <cctype>   //for isprint, isdigit
 
 #include <iomanip> //manipulation of io ... for the .0

@@ -227,7 +227,7 @@ void ScalarConverter::convert(const std::string& s)
 
             // cast to int
             std::cout << "int: ";
-            if (f < INT_MIN || f > INT_MAX || f != f) //isnan(f) nicht erlaubt... die einzige Zahl die nicht gleich selbst ist ist NaN
+            if (f < static_cast<float>(INT_MIN) || f > static_cast<float>(INT_MAX) || f != f) //isnan(f) nicht erlaubt... die einzige Zahl die nicht gleich selbst ist ist NaN
                 std::cout << "impossible" << std::endl;
             else
                 std::cout << static_cast<int>(f) << std::endl;
@@ -262,7 +262,7 @@ void ScalarConverter::convert(const std::string& s)
 
             // cast to int
             std::cout << "int: ";
-            if (d < INT_MIN || d > INT_MAX || d != d) //isnan(d) nicht erlaubt... die einzige Zahl die nicht gleich selbst ist ist NaN
+            if (d < static_cast<double>(INT_MIN) || d > static_cast<double>(INT_MAX) || d != d) //isnan(d) nicht erlaubt... die einzige Zahl die nicht gleich selbst ist ist NaN
                 std::cout << "impossible" << std::endl;
             else
                 std::cout << static_cast<int>(d) << std::endl;
