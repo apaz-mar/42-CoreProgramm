@@ -1,0 +1,51 @@
+services:
+  nginx:
+    build: ./requirements/nginx
+    image: nginx
+    container_name: nginx
+
+    #nginx also needs access to wordpress files (volumes and depends_on)
+    volumes:
+      - wpdata:/var/www/html
+      
+    ports:
+      - "443:443"
+    restart: always
+    depends_on:
+      - wordpress
+
+  mariadb:
+    build: ./requirements/mariadb
+    image: mariadb
+    container_name: mariadb
+    env_file:
+      - .env
+    volumes:
+      - dbdata:/var/lib/mysql
+    restart: always
+
+  wordpress:
+    build: ./requirements/wordpress
+    image: wordpress
+    container_name: wordpress
+    env_file:
+      - .env
+    volumes:
+      - wpdata:/var/www/html
+    restart: always
+    depends_on:
+      - mariadb
+
+volumes:
+  dbdata:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/apaz-mar/data/dbdata
+  wpdata:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/apaz-mar/data/wpdata
