@@ -85,7 +85,7 @@ start almost instantly and are easier to reproduce.
 
 ## Secrets vs Environment Variables
 
-Configuration values, including service credentials, are provided through a .env file and injected into the containers as environment variables. For the scope of this educational project, this approach keeps the configuration simple while separating it from the application code. In production environments, Docker Secrets would generally be preferred for managing sensitive credentials.
+Configuration values are loaded from a local .env file and injected into the containers as environment variables. To avoid exposing sensitive information, the local .env file is excluded from version control and a .env.example template is provided instead. For the scope of this educational project, this approach keeps the configuration simple while separating configuration from the application code.
 
 ## Docker Network vs Host Network
 
@@ -171,9 +171,10 @@ make re
 ├── README.md
 ├── USER_DOC.md
 ├── DEV_DOC.md
+├── .gitignore
 └── srcs
     ├── docker-compose.yml
-    ├── .env
+    ├── .env.example
     └── requirements
         ├── mariadb
         ├── nginx

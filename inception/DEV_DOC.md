@@ -27,9 +27,10 @@ the Inception project from a developer's perspective.
     ├── README.md
     ├── USER_DOC.md
     ├── DEV_DOC.md
+    ├── .gitignore
     └── srcs
         ├── docker-compose.yml
-        ├── .env
+        ├── .env.example
         └── requirements
             ├── mariadb
             │   ├── Dockerfile
@@ -45,23 +46,31 @@ the Inception project from a developer's perspective.
 
 # Environment Configuration
 
-Project configuration is stored in `srcs/.env`.
+Project configuration is loaded from a local `srcs/.env` file.
+
+To comply with the project requirements, this file is **not tracked by Git** because it contains credentials. Instead, the repository provides a template file (`srcs/.env.example`) documenting all required variables.
+
+Before building the project, create your local configuration:
+
+```bash
+cp srcs/.env.example srcs/.env
+```
+
+Then edit `srcs/.env` and provide your own credentials.
 
 Current variables:
 
-  Variable           Description
-  ------------------ ----------------------------------------
-  `MYSQL_DATABASE`   Database created during initialization
-  `MYSQL_USER`       WordPress database user
-  `MYSQL_PASSWORD`   Database user password
-  `WP_DB_HOST`       MariaDB service hostname
-  `WP_DB_NAME`       WordPress database
-  `WP_DB_USER`       WordPress database user
-  `WP_DB_PASSWORD`   Password used by WordPress
+| Variable | Description |
+|----------|-------------|
+| `MYSQL_DATABASE` | Database created during initialization |
+| `MYSQL_USER` | WordPress database user |
+| `MYSQL_PASSWORD` | Database user password |
+| `WP_DB_HOST` | MariaDB service hostname (`mariadb`) |
+| `WP_DB_NAME` | WordPress database |
+| `WP_DB_USER` | WordPress database user |
+| `WP_DB_PASSWORD` | Password used by WordPress |
 
-For this educational project, credentials are provided through
-environment variables. In production, Docker Secrets would be the
-preferred mechanism for sensitive information.
+For this educational project, configuration values and credentials are injected into the containers through environment variables. In production environments, Docker Secrets would generally be the preferred mechanism for storing sensitive information.
 
 ------------------------------------------------------------------------
 

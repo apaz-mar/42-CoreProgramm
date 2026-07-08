@@ -96,17 +96,27 @@ installation.
 
 # Credentials
 
-Project configuration is stored in `srcs/.env`.
+Project configuration is loaded from a local `srcs/.env` file.
 
-  Variable           Purpose
-  ------------------ --------------------------------------------------
-  `MYSQL_DATABASE`   MariaDB database created during initialization
-  `MYSQL_USER`       Database user used by WordPress
-  `MYSQL_PASSWORD`   Password for the WordPress database user
-  `WP_DB_HOST`       Database hostname (`mariadb`)
-  `WP_DB_NAME`       Database used by WordPress
-  `WP_DB_USER`       WordPress database user
-  `WP_DB_PASSWORD`   Password used by WordPress to connect to MariaDB
+For security reasons, this file is **not tracked by Git**. A template file (`srcs/.env.example`) is provided to document the required variables.
+
+Before starting the project for the first time, create your local configuration file:
+
+```bash
+cp srcs/.env.example srcs/.env
+```
+
+Then edit `srcs/.env` and provide your own credentials.
+
+| Variable | Purpose |
+|----------|---------|
+| `MYSQL_DATABASE` | MariaDB database created during initialization |
+| `MYSQL_USER` | Database user used by WordPress |
+| `MYSQL_PASSWORD` | Password for the WordPress database user |
+| `WP_DB_HOST` | Database hostname (`mariadb`) |
+| `WP_DB_NAME` | Database used by WordPress |
+| `WP_DB_USER` | WordPress database user |
+| `WP_DB_PASSWORD` | Password used by WordPress to connect to MariaDB |
 
 If any value is modified, rebuild or restart the affected containers.
 
