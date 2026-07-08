@@ -32,8 +32,8 @@ clean:
 fclean: clean
 	docker volume prune -f
 	docker network prune -f
-	rm -rf /home/apaz-mar/data/dbdata
-	rm -rf /home/apaz-mar/data/wpdata
+	sudo rm -rf /home/apaz-mar/data/dbdata
+	sudo rm -rf /home/apaz-mar/data/wpdata
 
 re: fclean all
 
