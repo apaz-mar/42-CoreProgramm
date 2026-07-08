@@ -38,4 +38,14 @@ services:
 
 volumes:
   dbdata:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/apaz-mar/data/dbdata
   wpdata:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/apaz-mar/data/wpdata
