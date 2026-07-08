@@ -100,13 +100,11 @@ Project configuration is loaded from a local `srcs/.env` file.
 
 For security reasons, this file is **not tracked by Git**. A template file (`srcs/.env.example`) is provided to document the required variables.
 
-Before starting the project for the first time, create your local configuration file:
+Copy the template and fill the password fields locally before running the project:
 
 ```bash
 cp srcs/.env.example srcs/.env
-```
-
-Then edit `srcs/.env` and provide your own credentials.
+nano srcs/.env
 
 | Variable | Purpose |
 |----------|---------|
