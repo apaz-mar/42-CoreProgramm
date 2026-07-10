@@ -44,12 +44,14 @@ services:
 
 volumes:
   dbdata:
+    name: dbdata
     driver: local
     driver_opts:
       type: none
       o: bind
       device: /home/apaz-mar/data/dbdata
   wpdata:
+    name: wpdata
     driver: local
     driver_opts:
       type: none

@@ -27,3 +27,5 @@ fi
 
 # so that mariadb listens on all container interfaces
 exec mysqld --user=mysql --bind-address=0.0.0.0
+#--port = 3307 #can be changed to anything other than default (3306)
+#also necessary to change in .env WP_DB_HOST=mariadb:3307
