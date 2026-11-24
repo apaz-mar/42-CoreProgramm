@@ -15,7 +15,7 @@ I completed the Core Curriculum alongside my professional career in engineering,
 | [Libft](./libft) | Implementation of a custom standard C library | C |
 | [Push Swap](./push_swap) | Sorting algorithms and algorithmic optimization | C |
 | [FdF](./FdF) | 3D wireframe visualization and computer graphics | C |
-| [Minishell](./minishell) | Implementation of a Unix shell, including processes, pipes and redirections | C, Unix |
+| [Minishell](https://github.com/shapkina-l/minishell) | Implementation of a Unix shell, including processes, pipes and redirections | C, Unix |
 | [Philosophers](./philosophers) | Concurrent programming and thread synchronization | C, POSIX Threads |
 | [Cub3D](./cub3dp) | Raycasting-based 3D graphics engine | C |
 | [C++ Modules](./cpp00) | Object-oriented programming, polymorphism, templates and STL containers | C++ |
