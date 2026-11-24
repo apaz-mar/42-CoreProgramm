@@ -19,17 +19,11 @@ I completed the Core Curriculum alongside my professional career in engineering,
 | [Philosophers](./philosophers) | Concurrent programming and thread synchronization | C, POSIX Threads |
 | [Cub3D](./cub3dp) | Raycasting-based 3D graphics engine | C |
 | [C++ Modules](./cpp00) | Object-oriented programming, polymorphism, templates and STL containers | C++ |
-| ft_irc | Implementation of an IRC server and network communication | C++, TCP/IP |
+| [ft_irc](https://github.com/giuliagalizoni/ft_irc) | Implementation of an IRC server and network communication | C++, TCP/IP |
 | [Inception](./inception) | Containerized infrastructure with Nginx, MariaDB and WordPress | Docker, Linux |
 | [ft_transcendence](https://github.com/tghnx1/scenegraph) | Collaborative full-stack web application | React, FastAPI, PostgreSQL, Docker |
 
 ## Collaborative Projects
-
-### ft_irc
-
-Implementation of an IRC server, covering network communication, client-server architecture and collaborative software development.
-
-[View team repository](INSERT_IRC_REPOSITORY_URL)
 
 ### ft_transcendence
 
@@ -45,6 +39,12 @@ My personal contribution focused on:
 - Frontend-backend integration
 
 [View team repository](https://github.com/tghnx1/scenegraph)
+
+### ft_irc
+
+Implementation of an IRC server, covering network communication, client-server architecture and collaborative software development.
+
+[View team repository](https://github.com/giuliagalizoni/ft_irc)
 
 ## Technical Skills
 
