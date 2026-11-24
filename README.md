@@ -46,6 +46,34 @@ Implementation of an IRC server, covering network communication, client-server a
 
 [View team repository](https://github.com/giuliagalizoni/ft_irc)
 
+### Cub3D
+
+Collaborative development of a 3D graphical application in C,
+inspired by Wolfenstein 3D and based on raycasting techniques.
+
+The project involved map parsing and validation, real-time
+rendering, texture mapping, player movement, collision
+detection and event handling using MiniLibX.
+
+[Project repository](https://github.com/Tarcisio2code/42Berlin/tree/master/Projects/cub3d)
+
+Developed jointly with [@Tarcisio2code](https://github.com/Tarcisio2code)
+
+The linked repository contains the final project implementation
+maintained by my project partner.
+
+### Minishell
+
+Collaborative development of a Unix shell in C, implementing
+command parsing, pipes, redirections, environment variables,
+built-in commands and signal handling.
+
+The project involved process management, inter-process
+communication, memory management and coordination between
+two developers.
+
+[Project repository](https://github.com/shapkina-l/minishell)
+
 ## Technical Skills
 
 - **Programming:** C, C++, Python
