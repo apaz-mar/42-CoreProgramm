@@ -39,13 +39,15 @@ My personal contribution focused on:
 - Frontend-backend integration
 
 [View team repository](https://github.com/tghnx1/scenegraph)
-Developed jointly with [@tghnx1](https://github.com/tghnx1)[@howset](https://github.com/howset)[@Tarcisio2code](https://github.com/Tarcisio2code)
+
+Developed jointly with [@tghnx1](https://github.com/tghnx1), [@howset](https://github.com/howset), [@Tarcisio2code](https://github.com/Tarcisio2code)
 
 ### ft_irc
 
 Implementation of an IRC server, covering network communication, client-server architecture and collaborative software development.
 
 [View team repository](https://github.com/giuliagalizoni/ft_irc)
+
 Developed jointly with [@giuliagalizoni](https://github.com/giuliagalizoni)
 
 ### Cub3D
@@ -58,7 +60,8 @@ rendering, texture mapping, player movement, collision
 detection and event handling using MiniLibX.
 
 [Project repository](https://github.com/Tarcisio2code/42Berlin/tree/master/Projects/cub3d)
-Developed jointly with [@Tarcisio2code](https://github.com/Tarcisio2code)
+
+Developed jointly with [@Tarcisio2code](https://github.com/Tarcisio2code).
 The linked repository contains the final project implementation
 maintained by my project partner.
 
@@ -73,6 +76,7 @@ communication, memory management and coordination between
 two developers.
 
 [Project repository](https://github.com/shapkina-l/minishell)
+
 Developed jointly with [@shapkina-l](https://github.com/shapkina-l)
 
 ## Technical Skills
