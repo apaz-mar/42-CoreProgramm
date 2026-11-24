@@ -27,7 +27,7 @@ I completed the Core Curriculum alongside my professional career in engineering,
 
 ### ft_transcendence
 
-Full-stack web application developed collaboratively, integrating frontend, backend, database and containerized services.
+Full-stack web application developed collaboratively in Python, integrating frontend, backend, database and containerized services.
 
 My personal contribution focused on:
 
