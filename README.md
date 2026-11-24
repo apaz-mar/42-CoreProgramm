@@ -44,7 +44,7 @@ My personal contribution focused on:
 - REST API development
 - Frontend-backend integration
 
-[View team repository](INSERT_TRANSCENDENCE_REPOSITORY_URL)
+[View team repository](https://github.com/tghnx1/scenegraph)
 
 ## Technical Skills
 
