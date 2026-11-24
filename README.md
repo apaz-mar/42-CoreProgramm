@@ -21,7 +21,7 @@ I completed the Core Curriculum alongside my professional career in engineering,
 | [C++ Modules](./cpp00) | Object-oriented programming, polymorphism, templates and STL containers | C++ |
 | ft_irc | Implementation of an IRC server and network communication | C++, TCP/IP |
 | [Inception](./inception) | Containerized infrastructure with Nginx, MariaDB and WordPress | Docker, Linux |
-| ft_transcendence | Collaborative full-stack web application | React, FastAPI, PostgreSQL, Docker |
+| [ft_transcendence](https://github.com/tghnx1/scenegraph) | Collaborative full-stack web application | React, FastAPI, PostgreSQL, Docker |
 
 ## Collaborative Projects
 
